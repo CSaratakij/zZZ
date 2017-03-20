@@ -47,7 +47,7 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 0, 9, 1, 9, 2, 9, 3, 9, 4, 9, 5, 9, 6, 9, 7, 9, 8, 9, 9, 9, 10, 9, 11, 9, 12, 9, 13, 9, 14, 9, 15, 9, 16, 9, 65551, 9, 65552, 9, 131073, 8, 131087, 9, 131088, 9, 196609, 8, 196620, 9, 196621, 9, 196622, 9, 196623, 9, 196624, 9, 262145, 9, 262159, 9, 262160, 9, 327695, 9, 327696, 9, 393231, 9, 393232, 9, 458767, 9, 458768, 9, 524289, 9, 524303, 9, 524304, 9, 589839, 9, 589840, 9 )
+tile_data = IntArray( 0, 9, 1, 9, 2, 9, 3, 9, 4, 9, 5, 9, 6, 9, 7, 9, 8, 9, 9, 9, 10, 9, 11, 9, 12, 9, 13, 9, 14, 9, 15, 9, 16, 9, 65537, 3, 65538, 12, 65539, 12, 65540, 12, 65541, 12, 65542, 12, 65543, 12, 65544, 12, 65545, 12, 65546, 12, 65547, 12, 65548, 12, 65549, 12, 65550, 4, 65551, 9, 65552, 9, 131073, 8, 131086, 7, 131087, 9, 131088, 9, 196609, 8, 196620, 9, 196621, 9, 196622, 9, 196623, 9, 196624, 9, 262145, 9, 262156, 12, 262157, 12, 262158, 12, 262159, 9, 262160, 9, 327681, 8, 327694, 7, 327695, 9, 327696, 9, 393217, 8, 393230, 7, 393231, 9, 393232, 9, 458753, 5, 458766, 7, 458767, 9, 458768, 9, 524289, 9, 524302, 6, 524303, 9, 524304, 9, 589839, 9, 589840, 9 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 
@@ -85,7 +85,7 @@ visibility/visible = false
 
 [node name="checker" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 96, 480 )
+transform/pos = Vector2( 96, 459.32 )
 
 [node name="stone" parent="." instance=ExtResource( 6 )]
 
@@ -95,54 +95,54 @@ transform/pos = Vector2( 928, 160 )
 
 [node name="spike" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 160, 544 )
+transform/pos = Vector2( 160, 531.782 )
 
 [node name="spike1" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 224, 544 )
+transform/pos = Vector2( 224, 531.782 )
 
 [node name="spike2" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 288, 544 )
+transform/pos = Vector2( 288, 531.782 )
 
 [node name="spike3" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 352, 544 )
+transform/pos = Vector2( 352, 531.782 )
 
 [node name="spike4" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 416, 544 )
+transform/pos = Vector2( 416, 531.782 )
 
 [node name="spike5" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 480, 544 )
+transform/pos = Vector2( 480, 531.782 )
 
 [node name="spike6" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 544, 544 )
+transform/pos = Vector2( 544, 531.782 )
 
 [node name="spike7" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 608, 544 )
+transform/pos = Vector2( 608, 531.782 )
 
 [node name="spike8" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 672, 544 )
+transform/pos = Vector2( 672, 531.782 )
 
 [node name="spike9" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 736, 544 )
+transform/pos = Vector2( 736, 531.782 )
 
 [node name="spike10" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 800, 544 )
+transform/pos = Vector2( 800, 531.782 )
 
 [node name="spike11" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 864, 544 )
+transform/pos = Vector2( 864, 531.782 )
 
 [node name="spike12" parent="spikes" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 928, 544 )
+transform/pos = Vector2( 928, 522.823 )
 
 
