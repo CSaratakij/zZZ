@@ -111,7 +111,7 @@ margin/right = 285.0
 margin/bottom = 149.0
 custom_constants/line_separation = 4
 bbcode/enabled = false
-bbcode/bbcode = "(W) : Left\n(A) : Right\n(Space) : Jump\n(LMB) : Swap position with box"
+bbcode/bbcode = "(W) : Left\n(A) : Right\n(Space) : Jump\n(LMB) : Swap position with box\n(Shift+R) : Reload current level\n(P) : Pause/Resume\n(Esc) : Game Menu"
 visible_characters = -1
 
 [node name="About" type="Tabs" parent="Panel/TabContainer"]

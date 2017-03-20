@@ -35,6 +35,9 @@ func next_scene():
 	current_level_id += 1
 	get_tree().change_scene(LEVEL[current_level_id])
 
+func mainmenu():
+	get_tree().change_scene(MENU["main"])
+
 func _savegame():
 	pass
 
