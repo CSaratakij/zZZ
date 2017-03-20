@@ -1,6 +1,28 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://script/gameover.gd" type="Script" id=1]
+[ext_resource path="res://res/BalooBhaina-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 150
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+
+font/size = 100
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 50
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
 
 [node name="gameover" type="Control"]
 
@@ -31,11 +53,44 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 446.0
-margin/top = 220.0
-margin/right = 592.0
-margin/bottom = 234.0
-text = "Thank you for playing :)"
+margin/left = 107.0
+margin/top = 9.0
+margin/right = 13214.0
+margin/bottom = 131865.0
+custom_fonts/font = SubResource( 1 )
+text = "Thank you"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label1" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 306.0
+margin/top = 170.0
+margin/right = 26520.0
+margin/bottom = 132026.0
+custom_fonts/font = SubResource( 3 )
+text = "for Playing :)"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 623.0
+margin/top = 349.0
+margin/right = 13730.0
+margin/bottom = 132205.0
+custom_fonts/font = SubResource( 2 )
+text = "- CSaratakij"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -46,10 +101,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 458.0
-margin/top = 337.0
-margin/right = 586.0
-margin/bottom = 413.0
+margin/left = 453.0
+margin/top = 440.0
+margin/right = 581.0
+margin/bottom = 516.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null

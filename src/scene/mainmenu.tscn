@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://script/mainmenu.gd" type="Script" id=1]
+[ext_resource path="res://res/BalooBhaina-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 100
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
 
 [node name="mainmenu" type="Control"]
 
@@ -31,10 +39,11 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 777.0
-margin/top = 195.0
-margin/right = 817.0
-margin/bottom = 209.0
+margin/left = 721.0
+margin/top = 130.0
+margin/right = 881.0
+margin/bottom = 332.0
+custom_fonts/font = SubResource( 1 )
 text = "zZZ"
 align = 1
 percent_visible = 1.0
@@ -48,9 +57,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 713.0
-margin/top = 265.0
+margin/top = 299.0
 margin/right = 892.0
-margin/bottom = 339.0
+margin/bottom = 373.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -64,9 +73,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 713.0
-margin/top = 364.0
+margin/top = 389.0
 margin/right = 892.0
-margin/bottom = 438.0
+margin/bottom = 463.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
