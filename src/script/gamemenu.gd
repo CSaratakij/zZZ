@@ -17,3 +17,6 @@ func _on_btnResume_pressed():
 
 func _on_btnMainMenu_pressed():
 	_global.mainmenu()
+
+func _on_btnRestart_pressed():
+	_tree.reload_current_scene()

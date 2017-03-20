@@ -23,8 +23,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 169.0
-margin/bottom = 135.0
+margin/right = 171.0
+margin/bottom = 201.0
 
 [node name="btnResume" type="Button" parent="Panel"]
 
@@ -42,6 +42,22 @@ shortcut = null
 text = "Resume"
 flat = false
 
+[node name="btnRestart" type="Button" parent="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 13.0
+margin/top = 71.0
+margin/right = 157.0
+margin/bottom = 117.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Restart"
+flat = false
+
 [node name="btnMainMenu" type="Button" parent="Panel"]
 
 focus/ignore_mouse = false
@@ -49,9 +65,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 13.0
-margin/top = 70.0
+margin/top = 129.0
 margin/right = 157.0
-margin/bottom = 116.0
+margin/bottom = 175.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -59,6 +75,8 @@ text = "MainMenu"
 flat = false
 
 [connection signal="pressed" from="Panel/btnResume" to="." method="_on_btnResume_pressed"]
+
+[connection signal="pressed" from="Panel/btnRestart" to="." method="_on_btnRestart_pressed"]
 
 [connection signal="pressed" from="Panel/btnMainMenu" to="." method="_on_btnMainMenu_pressed"]
 
