@@ -6,6 +6,7 @@ const MENU = {
 
 const LEVEL = [
 	"res://scene/level1.tscn",
+	"res://scene/level2.tscn",
 	"res://scene/gameover.tscn"
 ]
 

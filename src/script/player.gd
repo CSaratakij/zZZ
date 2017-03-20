@@ -4,7 +4,7 @@ const GRAVITY = 9.8
 const MOVE_FORCE = 300
 const JUMP_FORCE = 400
 
-const MAX_JUMP = 3
+const MAX_JUMP = 2
 const MAX_RAYCHECKER_LENGTH = 1000
 
 const AIM_COLOR = Color(255, 255, 0)
