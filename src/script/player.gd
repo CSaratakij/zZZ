@@ -29,6 +29,7 @@ onready var _raycast = get_node("RayCast2D")
 onready var _ray_checker = get_node("RayChecker")
 onready var _camera = get_node("Camera2D")
 onready var _mark = get_node("mark")
+onready var _timer = get_node("Timer")
 
 
 func _ready():
@@ -124,5 +125,16 @@ func _integrate_forces(state):
 			is_jumping = false
 	else:
 		result_lv.x = 0.0
-
+		if _timer.get_time_left() == 0:
+			_timer.start()
+			
 	state.set_linear_velocity(result_lv)
+	
+func _on_Area2D_body_enter( body ):
+	var contacts = body.get_groups()
+	if contacts.has("spike"):
+		is_alive = false
+		hide()
+
+func _on_Timer_timeout():
+	_tree.reload_current_scene()
