@@ -9,6 +9,7 @@ const LEVEL = [
 	"res://scene/level2.tscn",
 	"res://scene/level3.tscn",
 	"res://scene/level4.tscn",
+	"res://scene/level5.tscn",
 	"res://scene/gameover.tscn"
 ]
 

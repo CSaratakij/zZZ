@@ -1,0 +1,148 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://res/tile.tres" type="TileSet" id=1]
+[ext_resource path="res://scene/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scene/box.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scene/gamemenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scene/checker.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scene/stone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scene/spike.tscn" type="PackedScene" id=7]
+
+[node name="level2" type="Node2D"]
+
+__meta__ = { "_edit_lock_":true }
+
+[node name="TileMap" type="TileMap" parent="."]
+
+transform/pos = Vector2( 0, -11 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -65535, 11, -65534, 11, -65533, 11, -65532, 11, -65531, 11, -65530, 11, -65529, 11, -65528, 11, -65527, 11, -65526, 11, -65525, 11, -65524, 11, -65523, 11, -65522, 1073741835, -65521, 1073741835, 0, 1073741835, 1, 1073741835, 2, 1073741835, 3, 1073741835, 4, 1073741835, 5, 1073741835, 6, 1073741835, 7, 1073741835, 8, 1073741835, 9, 1073741835, 10, 1073741835, 11, 1073741835, 12, 1073741835, 13, 1073741835, 14, 1073741835, 15, 1073741835, 65536, 1073741835, 65537, 11, 65538, 11, 65539, 11, 65540, 11, 65541, 11, 65542, 11, 65543, 11, 65544, 11, 65545, 11, 65546, 11, 65547, 11, 65548, 11, 65549, 11, 65550, 11, 65551, 1073741835, 131072, 1073741835, 131073, 11, 131074, 11, 131075, 11, 131076, 11, 131077, 11, 131078, 11, 131079, 11, 131080, 11, 131081, 11, 131082, 11, 131083, 11, 131084, 11, 131085, 11, 131086, 11, 131087, 1073741835, 196608, 1073741835, 196609, 11, 196610, 11, 196611, 11, 196612, 11, 196613, 1073741835, 196614, 11, 196615, 11, 196616, 11, 196617, 11, 196618, 11, 196619, 11, 196620, 11, 196621, 11, 196622, 11, 196623, 1073741835, 327679, 1073741835, 262144, 1073741835, 262145, 11, 262146, 11, 262147, 11, 262148, 11, 262149, 1073741835, 262150, 11, 262151, 11, 262152, 11, 262153, 11, 262154, 11, 262155, 11, 262156, 11, 262157, 11, 262158, 11, 262159, 1073741835, 393215, 1073741835, 327680, 1073741835, 327681, 11, 327682, 11, 327683, 11, 327684, 11, 327685, 1073741835, 327686, 11, 327687, 11, 327688, 11, 327689, 11, 327690, 11, 327691, 11, 327692, 11, 327693, 11, 327694, 11, 327695, 1073741835, 458751, 1073741835, 393216, 1073741835, 393217, 11, 393218, 11, 393219, 11, 393220, 11, 393221, 1073741835, 393222, 11, 393223, 11, 393224, 11, 393225, 11, 393226, 11, 393227, 11, 393228, 11, 393229, 11, 393230, 11, 393231, 1073741835, 524287, 1073741835, 458752, 1073741835, 458753, 1073741835, 458754, 11, 458755, 11, 458756, 11, 458757, 1073741835, 458758, 11, 458759, 11, 458760, 11, 458761, 11, 458762, 11, 458763, 11, 458764, 11, 458765, 11, 458766, 11, 458767, 1073741835, 589823, 1073741835, 524288, 1073741835, 524289, 11, 524290, 11, 524291, 11, 524292, 11, 524293, 11, 524294, 11, 524295, 11, 524296, 11, 524297, 11, 524298, 11, 524299, 11, 524300, 11, 524301, 11, 524302, 11, 524303, 11, 589824, 1073741835, 589825, 11, 589826, 11, 589827, 11, 589828, 11, 589829, 11, 589830, 1073741835, 589831, 1073741835, 589832, 1073741835, 589833, 1073741835, 589834, 1073741835, 589835, 1073741835, 589836, 1073741835, 589837, 1073741835, 589838, 1073741835, 589839, 11 )
+
+[node name="TileMap 2" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -131071, 9, -131070, 9, -131069, 9, -131068, 9, -131067, 9, -131066, 9, -131065, 9, -131064, 9, -131063, 9, -131062, 9, -131061, 9, -131060, 9, -131059, 9, -131058, 9, -131057, 9, -131056, 9, -65536, 9, -65535, 8, -65520, 9, 65535, 9, 16, 9, 131071, 9, 65540, 9, 65542, 9, 65543, 8, 65552, 9, 196607, 9, 131076, 9, 131088, 9, 262143, 9, 196613, 9, 196614, 8, 196624, 9, 327679, 9, 262156, 7, 262157, 9, 262160, 9, 393215, 9, 327694, 9, 327696, 9, 458751, 9, 393220, 9, 393232, 9, 524287, 9, 458756, 9, 458768, 9, 589823, 9, 524288, 9, 524292, 9, 524298, 9, 524303, 9, 524304, 9, 655359, 9, 589824, 9, 589825, 9, 589826, 9, 589827, 9, 589828, 9, 589829, 9, 589830, 9, 589831, 9, 589832, 9, 589833, 9, 589834, 9, 589835, 9, 589836, 9, 589837, 9, 589838, 9, 589839, 9, 589840, 9 )
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 32, 480 )
+
+[node name="box" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 928, 288 )
+gravity_scale = 2.0
+damp_override/angular = 1000.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+offset = Vector2( 1, 1 )
+anchor_mode = 0
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="gamemenu" parent="." instance=ExtResource( 4 )]
+
+visibility/visible = false
+
+[node name="checker" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 672, 160 )
+
+[node name="stone" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 352, 96 )
+
+[node name="stone1" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 352, 160 )
+
+[node name="spikes" type="Node2D" parent="."]
+
+[node name="spike" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 160, 544 )
+
+[node name="spike1" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 224, 544 )
+
+[node name="spike2" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 352, 544 )
+
+[node name="spike4" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 416, 544 )
+
+[node name="spike5" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 480, 544 )
+
+[node name="spike6" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 544, 544 )
+
+[node name="spike7" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 608, 544 )
+
+[node name="spike8" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 736, 544 )
+
+[node name="spike9" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 800, 544 )
+
+[node name="spike10" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 864, 544 )
+
+[node name="spike11" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 928, 544 )
+
+[node name="spike12" parent="spikes" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 96, 544 )
+
+
