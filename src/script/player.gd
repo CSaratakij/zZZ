@@ -7,7 +7,7 @@ const JUMP_FORCE = 400
 const MAX_JUMP = 3
 const MAX_RAYCHECKER_LENGTH = 1000
 
-const AIM_COLOR = Color(0.0, 0.0, 0.0)
+const AIM_COLOR = Color(255, 255, 0)
 const AIM_WEIGHT = 3
 
 
