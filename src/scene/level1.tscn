@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://res/tile.tres" type="TileSet" id=1]
 [ext_resource path="res://scene/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scene/box.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scene/gamemenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scene/checker.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scene/stone.tscn" type="PackedScene" id=6]
 
 [node name="level1" type="Node2D"]
 
@@ -84,5 +85,13 @@ visibility/visible = false
 [node name="checker" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 928, 416 )
+
+[node name="stone" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 608, 224 )
+
+[node name="stone1" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 608, 288 )
 
 
