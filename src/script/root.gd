@@ -28,6 +28,9 @@ func _input(event):
 		var tree = get_tree()
 		tree.set_pause(!tree.is_paused())
 
+func start():
+	get_tree().change_scene(LEVEL[0])
+
 func next_scene():
 	current_level_id += 1
 	get_tree().change_scene(LEVEL[current_level_id])

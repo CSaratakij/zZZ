@@ -10,3 +10,9 @@ func _ready():
 
 func initialize():
 	_global.current_level_id = 0
+
+func _on_btnStart_pressed():
+	_global.start()
+
+func _on_btnQuit_pressed():
+	_tree.quit()
